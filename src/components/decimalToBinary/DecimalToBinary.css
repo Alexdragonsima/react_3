@@ -1,0 +1,127 @@
+/* Стили для основного контейнера компонента */
+.converter-container {
+    max-width: 600px;
+    /*Максимальная  ширина контейнера*/
+    margin: 40px auto;
+    /*Центрирование по горизонтали с отступом сверху и  снизу*/
+    padding: 30px;
+    /*Внутренние отступы*/
+    border-radius: 12px;
+    /*Скругление углов*/
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    /*градиентный фон*/
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /*Тень для глубины*/
+    color: blue;
+    /*Цвет текста*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*Шрифт*/
+}
+
+/* Стили для заголовка*/
+.converter-title {
+    text-align: center;
+    /*выравниваем по центру*/
+    margin-bottom: 10px;
+    /*Отступ снизу*/
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.converter-discription {
+    text-align: center;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.number-input {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.number-input:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.buttons-group {
+    display: flex;
+    gap: 15px;
+}
+
+.convert-btn,
+.clear-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.convert-btn {
+    background-color: #ff4e50;
+    color: white;
+}
+
+.clear-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.result-title {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.binary-result {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #ffeb3b;
+    word-break: break-all;
+}
+
+.calculation-info {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+@media (max-width:768px) {
+    .converter-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .buttons-group {
+        flex-direction: column;
+    }
+
+    .binary-result {
+        font-size: 24px;
+    }
+}
+.clear-btn{
+    /* color: blue; */
+    background-color: blue;
+}
